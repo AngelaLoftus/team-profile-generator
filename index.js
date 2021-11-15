@@ -173,11 +173,12 @@ function renderEngineerHtml() {
         //return the template literal for the card
         return  `<div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Engineer<br>${engineer.name}</h5>
+                        <h5 class="card-title">Engineer<br>${engineer.name} <i class="bi bi-eyeglasses"></i>
+                        </h5>
                         <p class="card-text">
-                        Id: ${engineer.id}
-                        <br>Email: <a href = "mailto: ${engineer.email}">${engineer.email}</a> 
-                        <br> Github:<a href= "${engineer.github}" class="card-link" target="_blank">${engineer.github}</a></p>                        
+                        <br>Id: ${engineer.id}
+                        <br><br>Email: <a href = "mailto: ${engineer.email}">${engineer.email}</a> 
+                        <br><br>Github: <a href= "${engineer.github}" class="card-link" target="_blank">${engineer.github}</a></p>                        
                     </div>
                 </div>`
     })
@@ -189,11 +190,12 @@ function renderInternHtml() {
     let templateInterns = internsArr.map(intern => {
         return  `<div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Intern<br>${intern.name}</h5>
+                        <h5 class="card-title">Intern<br>${intern.name} <i class="bi bi-person-badge-fill"></i>
+                        </h5>
                         <p class="card-text">
-                        Id: ${intern.id}
-                        <br>Email: <a href = "mailto: ${intern.email}">${intern.email}</a> 
-                        <br>School: ${intern.school}</p>
+                        <br>Id: ${intern.id}
+                        <br><br>Email: <a href = "mailto: ${intern.email}">${intern.email}</a> 
+                        <br><br>School: ${intern.school}</p>
                     </div>
                 </div>`
     });
@@ -205,12 +207,11 @@ function renderManagerHtml() {
     let templateManagers = managersArr.map(manager => {
         return `<div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Manager<br>${manager.name}</h5>
+                        <h5 class="card-title">Manager<br>${manager.name} <i class="bi bi-cup-fill"></i></h5>
                         <p class="card-text">
-                        Id: ${manager.id}
-                        <br>Email: ${manager.email}
-                        <br>Email: <a href = "mailto: ${manager.email}">${manager.email}</a> 
-                        <br> Office Number: ${manager.officeNumber}</p>
+                        <br>Id: ${manager.id}
+                        <br><br>Email: <a href = "mailto: ${manager.email}">${manager.email}</a> 
+                        <br><br>Office Number: ${manager.officeNumber}</p>
                     </div>
                 </div>`
     })
@@ -230,6 +231,7 @@ function createHtml () {
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>HTML 5 Boilerplate</title>
         <link rel= "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style.css">
       </head>
       <header class= "bg-danger" >

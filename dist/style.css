@@ -8,9 +8,26 @@ header {
 
 body{
     flex: auto;
+    flex-wrap: wrap;
+    background-color: gray;
+
 }
 
 h5,h6{
-    background-color: blue;
+    background-color: rgb(14, 15, 85);
     color: white;
+    font-size: large;
+    word-spacing: 5mm;
+    margin:0px;
+}
+
+.card {
+    margin: 30px;
+    box-shadow: 5px;
+}
+
+ 
+
+.card-text {
+    background-color: lightblue;
 }
