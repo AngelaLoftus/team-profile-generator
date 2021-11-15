@@ -31,7 +31,14 @@
 
 - WHEN I decide to finish building my team
 - THEN I exit the application, and the HTML is generated
+# Link to Sample HTML file within Github
+[SampleHTML](https://github.com/AngelaLoftus/team-profile-generator/blob/main/dist/index.html)
 
 # Link to Walkthrough video showing application
 
-- LINK PLACEHOLDER 
+[WalkthruVideo](https://watch.screencastify.com/v/wlcUEie0wsosZkv0pefQ)
+
+# Contact Me
+- Name: Angela Loftus
+- Github profile: https://github.com/AngelaLoftus 
+- Email address: angelaloftus@yahoo.com 
