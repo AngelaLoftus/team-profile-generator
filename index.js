@@ -15,9 +15,9 @@ let internsArr = [];
 let managersArr = [];
 //one manager (reorganize later)
 //template literal for engineers and interns 
-
+createManager()
 //call the function to start the prompts
-chooseEmployee();
+// chooseEmployee();
 
 //function to get employee info through inquirer prompts
 //allow user to choose which type of employee they are adding
@@ -31,8 +31,7 @@ function chooseEmployee() {
             choices: [
                 'Engineer',
                 'Intern',
-                'Manager',
-                'Exit',
+                 'Exit',
             ]
         }
     ]).then(res => {
@@ -47,10 +46,7 @@ function chooseEmployee() {
             console.log("You created an intern");
             createIntern();
             break;
-        case "Manager":
-            console.log("You created a manager");
-            createManager();
-            break;
+         
         case "Exit": 
             writeToFile();
             
@@ -192,7 +188,7 @@ function renderEngineerHtml() {
 function renderInternHtml() {
     let templateInterns = internsArr.map(intern => {
         return  `<div class="card" style="width: 18rem;">
-                    <div class="card-body">s
+                    <div class="card-body">
                         <h5 class="card-title">Intern<br>${intern.name}</h5>
                         <p class="card-text">
                         Id: ${intern.id}
